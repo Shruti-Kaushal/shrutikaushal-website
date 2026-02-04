@@ -1,144 +1,95 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shruti Kaushal — Data Scientist</title>
-    <meta name="description" content="Personal website of Your Name: Data Scientist in healthcare/pharma." />
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<main id="main" class="container">
+  <header class="header">
+    <div class="topline">
+      <h1>Shruti Kaushal</h1>
+    </div>
 
-    <header class="header">
-      <div class="container header__inner">
-        <div class="brand">
-          <div class="brand__name">Shruti Kaushal</div>
-          <div class="brand__tag">Senior Data Scientist • Healthcare/Pharma • ML</div>
-        </div>
+    <p class="role">Senior Data Scientist • Healthcare/Pharma</p>
 
-        <nav class="nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#talks">Talks</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+    <p class="intro">
+      I build ML systems for clinical trial integrity, patient safety, and risk analytics.
+      (We’ll refine this sentence next.)
+    </p>
 
-    <main id="main">
-      <section class="hero">
-        <div class="container hero__inner">
-          <p class="eyebrow">Open to collaboration & speaking</p>
-          <h1>
-            I build ML systems for <span class="accent">clinical trial integrity</span>,
-            <span class="accent">patient safety</span>, and <span class="accent">risk analytics</span>.
-          </h1>
-          <p class="subhead">
-            Short sentence about who you are + what you do + what you’re looking for.
-            Keep it punchy. (We’ll refine this.)
+    <div class="links">
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <span>•</span>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <span>•</span>
+      <a href="#" target="_blank" rel="noopener">Resume</a>
+      <span>•</span>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Past Work</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="work" class="section">
+    <h2>Past Work</h2>
+
+    <article class="item">
+      <div class="item__header">
+        <!-- Optional: add an image file under /assets and point to it -->
+        <img class="thumb" src="assets/project-1.jpg" alt="" />
+        <div>
+          <h3>Duplicate Patient Detection</h3>
+          <p class="meta">Clinical Trials • ML • Entity Resolution</p>
+          <p class="desc">
+            1–2 lines on what you built and why it matters. Keep it impact-first, non-proprietary.
           </p>
-
-          <div class="cta">
-            <a class="btn" href="#contact">Contact</a>
-            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Resume (PDF)</a>
-          </div>
-
-          <div class="quick-facts">
-            <div class="pill">Anomaly Detection</div>
-            <div class="pill">Duplicate Patient Detection</div>
-            <div class="pill">NLP + Embeddings</div>
-            <div class="pill">Interpretability</div>
+          <div class="item__links">
+            <a href="#" target="_blank" rel="noopener">Abstract</a>
+            <span>•</span>
+            <a href="#" target="_blank" rel="noopener">Slides</a>
           </div>
         </div>
-      </section>
+      </div>
+    </article>
 
-      <section id="about" class="section">
-        <div class="container">
-          <h2>About</h2>
-          <div class="card">
-            <p>
-              Write 3–5 sentences about your focus areas, what you’ve shipped/led, and the impact.
-              Mention awards/recognition briefly. Avoid proprietary details.
-            </p>
-            <p class="muted">
-              Keywords for recruiters: ML, Python, clinical trials, safety analytics, RBQM, statistics, NLP.
-            </p>
+    <article class="item">
+      <div class="item__header">
+        <img class="thumb" src="assets/project-2.jpg" alt="" />
+        <div>
+          <h3>Site-level Anomaly Detection</h3>
+          <p class="meta">RBQM • Unsupervised ML • Interpretability</p>
+          <p class="desc">
+            1–2 lines describing the core insight and the decision it enables.
+          </p>
+          <div class="item__links">
+            <a href="#" target="_blank" rel="noopener">Write-up</a>
           </div>
         </div>
-      </section>
+      </div>
+    </article>
+  </section>
 
-      <section id="projects" class="section">
-        <div class="container">
-          <h2>Featured Projects</h2>
+  <section id="writing" class="section">
+    <h2>Writing</h2>
+    <div class="item">
+      <h3>Coming soon</h3>
+      <p class="meta">Short notes on ML in clinical trials, interpretability, and applied research.</p>
+    </div>
+  </section>
 
-          <div class="grid">
-            <article class="card">
-              <h3>Project 1 — Duplicate Patient Detection</h3>
-              <p class="muted">1–2 lines: problem + why it matters.</p>
-              <ul>
-                <li>Approach (high-level): signals, model family, validation idea.</li>
-                <li>Impact: metric, time saved, risk reduced (even directional for now).</li>
-              </ul>
-            </article>
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="item">
+      <p class="desc">
+        Email: <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </div>
+  </section>
 
-            <article class="card">
-              <h3>Project 2 — Site-level Anomaly Detection</h3>
-              <p class="muted">1–2 lines: what it detects and who it helps.</p>
-              <ul>
-                <li>Approach: unsupervised / hybrid / interpretable insights.</li>
-                <li>Impact: earlier detection, fewer manual reviews, etc.</li>
-              </ul>
-            </article>
+  <footer class="footer">
+    © <span id="year"></span> Your Name
+  </footer>
+</main>
 
-            <article class="card">
-              <h3>Project 3 — Safety / Medical Monitoring Analytics</h3>
-              <p class="muted">1–2 lines: what decisions it supports.</p>
-              <ul>
-                <li>Approach: modeling + explainability + monitoring.</li>
-                <li>Impact: improved signal detection / triage speed.</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
+<script src="script.js"></script>
 
-      <section id="talks" class="section">
-        <div class="container">
-          <h2>Talks & Recognition</h2>
-          <div class="card">
-            <ul class="list">
-              <li><strong>President’s Award</strong> — 1 line on why (impact/innovation).</li>
-              <li><strong>Conference submissions</strong> — DPharm / Bio-IT / PharmaDS (add titles later).</li>
-              <li><strong>Topics</strong> — Duplicate detection, anomaly detection, trial integrity, AI governance.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="container">
-          <h2>Contact</h2>
-          <div class="card contact">
-            <p>
-              Best way to reach me:
-              <a href="mailto:you@example.com">you@example.com</a>
-            </p>
-            <p class="muted">
-              Also find me on <a href="#" target="_blank" rel="noopener">LinkedIn</a>.
-            </p>
-          </div>
-
-          <footer class="footer">
-            <p class="muted">© <span id="year"></span> Your Name. Built with simple HTML/CSS.</p>
-          </footer>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
-</html>
