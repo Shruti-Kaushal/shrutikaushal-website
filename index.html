@@ -1,95 +1,85 @@
-<a class="skip-link" href="#main">Skip to content</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal website of Your Name." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-<main id="main" class="container">
-  <header class="header">
-    <div class="topline">
-      <h1>Shruti Kaushal</h1>
-    </div>
-
-    <p class="role">Senior Data Scientist • Healthcare/Pharma</p>
-
-    <p class="intro">
-      I build ML systems for clinical trial integrity, patient safety, and risk analytics.
-      (We’ll refine this sentence next.)
-    </p>
-
-    <div class="links">
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <span>•</span>
-      <a href="#" target="_blank" rel="noopener">GitHub</a>
-      <span>•</span>
-      <a href="#" target="_blank" rel="noopener">Resume</a>
-      <span>•</span>
-      <a href="mailto:you@example.com">Email</a>
-    </div>
-
-    <nav class="nav" aria-label="Primary">
-      <a href="#work">Past Work</a>
-      <a href="#writing">Writing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="work" class="section">
-    <h2>Past Work</h2>
-
-    <article class="item">
-      <div class="item__header">
-        <!-- Optional: add an image file under /assets and point to it -->
-        <img class="thumb" src="assets/project-1.jpg" alt="" />
-        <div>
-          <h3>Duplicate Patient Detection</h3>
-          <p class="meta">Clinical Trials • ML • Entity Resolution</p>
-          <p class="desc">
-            1–2 lines on what you built and why it matters. Keep it impact-first, non-proprietary.
-          </p>
-          <div class="item__links">
-            <a href="#" target="_blank" rel="noopener">Abstract</a>
-            <span>•</span>
-            <a href="#" target="_blank" rel="noopener">Slides</a>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <article class="item">
-      <div class="item__header">
-        <img class="thumb" src="assets/project-2.jpg" alt="" />
-        <div>
-          <h3>Site-level Anomaly Detection</h3>
-          <p class="meta">RBQM • Unsupervised ML • Interpretability</p>
-          <p class="desc">
-            1–2 lines describing the core insight and the decision it enables.
-          </p>
-          <div class="item__links">
-            <a href="#" target="_blank" rel="noopener">Write-up</a>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <section id="writing" class="section">
-    <h2>Writing</h2>
-    <div class="item">
-      <h3>Coming soon</h3>
-      <p class="meta">Short notes on ML in clinical trials, interpretability, and applied research.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="item">
-      <p class="desc">
-        Email: <a href="mailto:you@example.com">you@example.com</a>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Your Name</h1>
+      <p class="role">Senior Data Scientist • Healthcare/Pharma</p>
+      <p class="intro">
+        I build ML systems for clinical trial integrity, patient safety, and risk analytics.
       </p>
-    </div>
-  </section>
 
-  <footer class="footer">
-    © <span id="year"></span> Your Name
-  </footer>
-</main>
+      <div class="links">
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <span>•</span>
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <span>•</span>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <span>•</span>
+        <a href="mailto:you@example.com">Email</a>
+      </div>
 
-<script src="script.js"></script>
+      <nav class="nav">
+        <a href="#work">Past Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
+    <section id="work" class="section">
+      <h2>Past Work</h2>
+
+      <article class="item">
+        <div class="item__header">
+          <!-- If you don't have images yet, delete this <img> line. -->
+          <img class="thumb" src="assets/project-1.jpg" alt="" />
+          <div>
+            <h3>Duplicate Patient Detection</h3>
+            <p class="meta">Clinical Trials • ML • Entity Resolution</p>
+            <p class="desc">1–2 lines: problem → approach → impact (non-proprietary).</p>
+            <div class="item__links">
+              <a href="#" target="_blank" rel="noopener">Abstract</a>
+              <span>•</span>
+              <a href="#" target="_blank" rel="noopener">Slides</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="item__header">
+          <img class="thumb" src="assets/project-2.jpg" alt="" />
+          <div>
+            <h3>Site-level Anomaly Detection</h3>
+            <p class="meta">RBQM • Unsupervised ML • Interpretability</p>
+            <p class="desc">1–2 lines describing what it detects and why it matters.</p>
+            <div class="item__links">
+              <a href="#" target="_blank" rel="noopener">Write-up</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="item">
+        <p class="desc">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Your Name
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
