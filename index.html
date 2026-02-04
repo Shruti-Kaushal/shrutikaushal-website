@@ -3,80 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shruti Kaushak — Portfolio</title>
-  <meta name="description" content="Personal website of Shruti Kaushak." />
+  <title>Shruti Kaushal — Senior Data Scientist</title>
+  <meta name="description" content="Shruti Kaushal — Senior Data Scientist in healthcare/pharma. ML for trial integrity, patient safety, and risk analytics." />
+  <meta name="color-scheme" content="dark" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <main class="container">
+  <a class="skip" href="#work">Skip to Past Work</a>
+
+  <main class="wrap">
+    <!-- Header -->
     <header class="header">
-      <h1>Shruti Kaushak</h1>
-      <p class="role">Senior Data Scientist • Healthcare/Pharma</p>
-      <p class="intro">
-        I build ML systems for clinical trial integrity, patient safety, and risk analytics.
-      </p>
+      <div class="identity">
+        <!-- If you add a headshot later: assets/me.jpg -->
+        <img class="avatar" src="assets/me.jpg" alt="" onerror="this.style.display='none'" />
+        <div>
+          <h1>Shruti Kaushal</h1>
+          <p class="role">Senior Data Scientist • Healthcare/Pharma</p>
+          <p class="intro">
+            I build ML systems for clinical trial integrity, patient safety, and risk analytics —
+            with a focus on anomaly detection, duplicate patient detection, and interpretable modeling.
+          </p>
 
-      <div class="links">
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <span>•</span>
-        <a href="#" target="_blank" rel="noopener">GitHub</a>
-        <span>•</span>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-        <span>•</span>
-        <a href="mailto:you@example.com">Email</a>
+          <div class="links" aria-label="Links">
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="dot">•</span>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <span class="dot">•</span>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <span class="dot">•</span>
+            <a href="mailto:you@example.com">Email</a>
+          </div>
+        </div>
       </div>
-
-      <nav class="nav">
-        <a href="#work">Past Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
+    <!-- Past Work -->
     <section id="work" class="section">
       <h2>Past Work</h2>
 
-      <article class="item">
-        <div class="item__header">
-          <!-- If you don't have images yet, delete this <img> line. -->
-          <img class="thumb" src="assets/project-1.jpg" alt="" />
-          <div>
-            <h3>Duplicate Patient Detection</h3>
+      <!-- Group: AbbVie -->
+      <div class="group">
+        <h3 class="group-title">AbbVie (20XX–Present)</h3>
+
+        <article class="item">
+          <div class="thumb" style="--img:url('assets/project-1.jpg')"></div>
+          <div class="body">
+            <h4>Duplicate Patient Detection</h4>
             <p class="meta">Clinical Trials • ML • Entity Resolution</p>
-            <p class="desc">1–2 lines: problem → approach → impact (non-proprietary).</p>
-            <div class="item__links">
+            <p class="desc">
+              One tight sentence on what you built and why it matters. Keep it impact-first, non-proprietary.
+            </p>
+            <div class="item-links">
               <a href="#" target="_blank" rel="noopener">Abstract</a>
-              <span>•</span>
+              <span class="dot">•</span>
               <a href="#" target="_blank" rel="noopener">Slides</a>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="item">
-        <div class="item__header">
-          <img class="thumb" src="assets/project-2.jpg" alt="" />
-          <div>
-            <h3>Site-level Anomaly Detection</h3>
+        <article class="item">
+          <div class="thumb" style="--img:url('assets/project-2.jpg')"></div>
+          <div class="body">
+            <h4>Site-level Anomaly Detection</h4>
             <p class="meta">RBQM • Unsupervised ML • Interpretability</p>
-            <p class="desc">1–2 lines describing what it detects and why it matters.</p>
-            <div class="item__links">
+            <p class="desc">
+              One sentence on the decision this enables (earlier risk detection, triage, signal surfacing, etc.).
+            </p>
+            <div class="item-links">
               <a href="#" target="_blank" rel="noopener">Write-up</a>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
+
+      <!-- Group: Education / Research -->
+      <div class="group">
+        <h3 class="group-title">Research & Education</h3>
+
+        <article class="item">
+          <div class="thumb thumb--doc"></div>
+          <div class="body">
+            <h4>Applied ML Research in Healthcare</h4>
+            <p class="meta">Methods • Experiments • Interpretation</p>
+            <p class="desc">
+              Brief line about your research orientation (what questions you like tackling; the “why”).
+            </p>
+            <div class="item-links">
+              <a href="#" target="_blank" rel="noopener">Writing (coming soon)</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- Recognition -->
+    <section class="section">
+      <h2>Recognition</h2>
+      <div class="text-block">
+        <ul class="bullets">
+          <li><strong>President’s Award</strong> — one line on the impact/innovation (non-proprietary).</li>
+          <li>Speaking & submissions — DPharm / Bio-IT / PharmaDS (titles coming soon).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
       <h2>Contact</h2>
-      <div class="item">
+      <div class="text-block">
         <p class="desc">Email: <a href="mailto:you@example.com">you@example.com</a></p>
       </div>
     </section>
 
     <footer class="footer">
-      © <span id="year"></span> Shruti Kaushak
+      © <span id="year"></span> Shruti Kaushal
     </footer>
   </main>
 
