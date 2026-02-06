@@ -3,14 +3,17 @@ const tooltip = document.getElementById('project-tooltip');
 
 nodes.forEach(node => {
     node.addEventListener('mousemove', (e) => {
+        // Only trigger for nodes with experience data
         const text = node.getAttribute('data-project');
-        tooltip.innerHTML = `<strong>Project Detail:</strong><br>${text}`;
+        if (!text) return;
+
+        tooltip.innerHTML = text;
         tooltip.classList.remove('tooltip-hidden');
         
-        // Dynamic positioning
+        // Offset positioning
         const offset = 20;
         tooltip.style.left = (e.pageX + offset) + 'px';
-        tooltip.style.top = (e.pageY - 100) + 'px';
+        tooltip.style.top = (e.pageY - 60) + 'px';
     });
 
     node.addEventListener('mouseleave', () => {
