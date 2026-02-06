@@ -1,17 +1,19 @@
-const btn = document.querySelector("#theme-toggle");
-const currentTheme = localStorage.getItem("theme");
+const nodes = document.querySelectorAll('.step-node');
+const tooltip = document.getElementById('project-tooltip');
 
-if (currentTheme === "dark") {
-    document.body.setAttribute("data-theme", "dark");
-}
+nodes.forEach(node => {
+    node.addEventListener('mousemove', (e) => {
+        const text = node.getAttribute('data-project');
+        tooltip.innerHTML = `<strong>Project Detail:</strong><br>${text}`;
+        tooltip.classList.remove('tooltip-hidden');
+        
+        // Dynamic positioning
+        const offset = 20;
+        tooltip.style.left = (e.pageX + offset) + 'px';
+        tooltip.style.top = (e.pageY - 100) + 'px';
+    });
 
-btn.addEventListener("click", () => {
-    let theme = document.body.getAttribute("data-theme");
-    if (theme === "dark") {
-        document.body.removeAttribute("data-theme");
-        localStorage.setItem("theme", "light");
-    } else {
-        document.body.setAttribute("data-theme", "dark");
-        localStorage.setItem("theme", "dark");
-    }
+    node.addEventListener('mouseleave', () => {
+        tooltip.classList.add('tooltip-hidden');
+    });
 });
