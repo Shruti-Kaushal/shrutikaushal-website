@@ -1,93 +1,153 @@
 :root {
     --bg: #ffffff;
-    --text: #111111;
-    --secondary: #666666;
-    --accent: #0070f3;
+    --text: #111;
+    --secondary: #666;
+    --accent: #eeeeee;
+    --border: #d1d1d1;
 }
 
-body.dark-theme {
+[data-theme="dark"] {
     --bg: #0a0a0a;
     --text: #ededed;
     --secondary: #a1a1a1;
+    --accent: #222222;
+    --border: #333;
 }
 
 body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--text);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    margin: 0;
     transition: background 0.3s ease;
 }
 
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 2rem;
+.main-layout { display: flex; min-height: 100vh; }
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    padding: 60px 40px;
+    position: fixed;
+    height: 100vh;
+    border-right: 1px solid var(--accent);
 }
 
-nav {
-    padding: 2rem 0;
+.headshot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    background: var(--accent);
 }
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.sidebar h1 { font-size: 1.4rem; margin: 0 0 12px 0; font-weight: 600; }
+.bio { font-size: 0.85rem; color: var(--secondary); line-height: 1.6; margin-bottom: 24px; }
+.sidebar-links a { display: block; color: var(--text); margin-bottom: 8px; font-size: 0.9rem; text-decoration: none; }
+.sidebar-links a:hover { text-decoration: underline; }
 
-.logo {
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--text);
-}
+#theme-toggle { background: none; border: none; cursor: pointer; font-size: 1.2rem; margin-top: 20px; }
 
-#theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
+/* CONTENT */
+.content { margin-left: 360px; padding: 60px 60px; max-width: 800px; }
+section { margin-bottom: 60px; }
+h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 30px; border-bottom: 1px solid var(--accent); padding-bottom: 8px; }
+h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 
-.hero {
-    margin: 4rem 0;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: var(--secondary);
-}
-
-.links a {
-    margin-right: 1rem;
-    color: var(--text);
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
-.projects h2 {
-    font-size: 1.5rem;
-    margin-top: 4rem;
+/* PROJECT GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .project-card {
-    margin-bottom: 2rem;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #eee;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    transition: transform 0.2s ease;
 }
 
-body.dark-theme .project-card {
-    border-bottom: 1px solid #222;
+.project-card:hover { transform: translateY(-3px); }
+
+.thumbnail-box { height: 140px; background: var(--accent); border-bottom: 1px solid var(--border); overflow: hidden; }
+.thumbnail-box img { width: 100%; height: 100%; object-fit: cover; }
+.card-content { padding: 16px; }
+.card-content h4 { margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 600; }
+.card-content p { margin: 0; font-size: 0.8rem; color: var(--secondary); line-height: 1.5; }
+
+/* RESEARCH LIST */
+.writing-list { border-top: 1px solid var(--accent); }
+.writing-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 24px 0; border-bottom: 1px solid var(--accent); text-decoration: none;
+    transition: padding-left 0.2s ease;
+}
+.writing-item:hover { padding-left: 8px; }
+.writing-info { display: flex; flex-direction: column; gap: 4px; }
+.writing-title { font-size: 1rem; color: var(--text); font-weight: 500; line-height: 1.4; }
+.writing-meta { font-size: 0.75rem; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+.writing-arrow { color: var(--secondary); transition: transform 0.2s ease; }
+.writing-item:hover .writing-arrow { transform: translateX(5px); color: var(--text); }
+
+.no-link:hover { padding-left: 0; cursor: default; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .main-layout { flex-direction: column; }
+    .sidebar { position: relative; width: auto; height: auto; border-right: none; border-bottom: 1px solid var(--accent); padding: 40px 20px; }
+    .content { margin-left: 0; padding: 40px 20px; }
+    .project-grid { grid-template-columns: 1fr; }
+}
+/* Enhanced Project Card Interaction */
+.project-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    cursor: pointer;
+    /* Smooth transition for all properties */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease;
 }
 
-.date {
-    font-size: 0.8rem;
+.project-card:hover {
+    transform: translateY(-6px); /* Lifts the card up */
+    border-color: var(--text);   /* Darkens the border to match your text */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Adds a subtle depth shadow */
+}
+
+/* Dark mode shadow adjustment */
+[data-theme="dark"] .project-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Zoom effect on the image when hovering the card */
+.thumbnail-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .thumbnail-box img {
+    transform: scale(1.05); /* Slight zoom on the image */
+}
+.sidebar-links i {
+    width: 20px;       /* Fixed width so text aligns vertically */
+    margin-right: 10px;
+    font-size: 1.1rem;
     color: var(--secondary);
+}
+
+.sidebar-links a:hover i {
+    color: var(--text); /* Icon lights up on hover */
 }
