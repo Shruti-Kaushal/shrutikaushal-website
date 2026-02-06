@@ -164,17 +164,53 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 
 /* Step Circles */
 .circle-bg {
-    fill: #fff;
-    stroke-width: 5;
+    stroke-width: 2;
     transition: all 0.3s ease;
 }
 
-/* Designing colors based on your image input */
-.discovery { stroke: #1a3a5f; }
-.phase1-2 { stroke: #6b8e6b; }
-.phase3-4 { stroke: #d48a5b; }
-.regulatory { stroke: #e5b34e; }
+/* Solid Fills based on your branding */
+.discovery { 
+    fill: #B19CD9; 
+    stroke: #B19CD9; 
+}
+.phase3-4 { 
+    fill: #d48a5b; 
+    stroke: #d48a5b; 
+}
+.regulatory { 
+    fill: #e5b34e; 
+    stroke: #e5b34e; 
+}
 
+/* Grayed out Phase 1 & 2 (Solid) */
+.phase-locked {
+    fill: #dddddd;
+    stroke: #cccccc;
+}
+
+/* Update Text for Solid Backgrounds */
+.step-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-anchor: middle;
+    fill: #ffffff; /* White text for better contrast on solid colors */
+}
+
+.gray-text { 
+    fill: #777777 !important; /* Darker gray for readability on light gray circle */
+}
+
+.step-icon {
+    font-size: 24px;
+    text-anchor: middle;
+}
+
+/* Adjust Hover Glow to Match Solid Colors */
+.step-node:not(.locked):hover .circle-bg {
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
+    transform: translateY(-5px);
+    brightness: 1.1;
+}
 /* Interactive Glow/Highlight */
 .step-node { cursor: pointer; }
 .step-node:hover .circle-bg {
@@ -184,7 +220,7 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 }
 
 /* Specific Hover Glows */
-.step-node:hover .discovery { filter: drop-shadow(0 0 15px #1a3a5f); }
+.step-node:hover .discovery { filter: drop-shadow(0 0 15px #B19CD9); }
 .step-node:hover .phase1-2 { filter: drop-shadow(0 0 15px #6b8e6b); }
 .step-node:hover .phase3-4 { filter: drop-shadow(0 0 15px #d48a5b); }
 .step-node:hover .regulatory { filter: drop-shadow(0 0 15px #e5b34e); }
@@ -243,7 +279,7 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 }
 
 /* Ensure active steps maintain their styling */
-.discovery { stroke: #1a3a5f; }
+.discovery { stroke: #B19CD9; }
 .phase3-4 { stroke: #d48a5b; }
 .regulatory { stroke: #e5b34e; }
 
@@ -251,4 +287,3 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     filter: drop-shadow(0 0 15px currentColor);
     transform: translateY(-5px);
     stroke-width: 8;
-}
