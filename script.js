@@ -1,5 +1,5 @@
 const nodes = document.querySelectorAll('.step-node');
-const tooltip = document.getElementById('project-tooltip');
+const tooltip = document.getElementById('experience-tooltip');
 
 nodes.forEach(node => {
     node.addEventListener('mousemove', (e) => {

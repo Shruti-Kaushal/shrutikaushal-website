@@ -246,7 +246,7 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 }
 
 /* Tooltip Styling */
-#project-tooltip {
+#experience-tooltip {
     position: absolute;
     background: rgba(40, 40, 40, 0.95);
     color: #fff;
@@ -254,7 +254,8 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     border-radius: 8px;
     font-size: 13px;
     width: 250px;
-    line-height: 1.4;
+    line-height: 1.6; /* Increased for better bullet spacing */
+    text-align: left;  /* Ensures list items align properly */
     z-index: 1000;
     pointer-events: none;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
