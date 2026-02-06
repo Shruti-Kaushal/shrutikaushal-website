@@ -54,7 +54,12 @@ body {
 section { margin-bottom: 60px; }
 h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 30px; border-bottom: 1px solid var(--accent); padding-bottom: 8px; }
 h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
-
+/* Update the summary text style */
+.lead-summary {
+    font-size: 0.9rem;       /* Makes the text smaller */
+    color: var(--secondary); /* Uses your existing lighter gray color */
+    line-height: 1.6;        /* Maintains readability */
+}
 /* PROJECT GRID */
 .project-grid {
     display: grid;
@@ -153,9 +158,15 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 }
 
 /* Lifecycle */
+/* Reduce space above the lifecycle graphic */
+#lifecycle-section {
+    margin-top: -20px;   /* Pulls the graphic closer to the text above */
+    margin-bottom: 20px; /* Keeps the gap small below it as well */
+}
+
 .lifecycle-container {
     position: relative;
-    padding: 40px 0;
+    padding: 0;      /* Reduced from 10px to 0 to remove extra vertical space */
     max-width: 900px;
     margin: 0 auto;
 }

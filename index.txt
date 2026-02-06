@@ -36,15 +36,12 @@
         <main class="content">
             
             <section id="about">
-                <p class="lead-summary">
-                    I am a Data Scientist driven by the intersection of abstract mathematics and life-saving clinical innovation. With a foundation in <strong>Mathematics from IIT Delhi</strong> and <strong>Data Science from Columbia University</strong>, I lead cross-functional teams to deploy unsupervised anomaly detection and medical monitoring models at scale. My approach combines rigorous algorithmic design—from <strong>Markov Random Fields to Isolation Forests</strong>—with a deep understanding of <strong>GxP and regulatory compliance</strong>, ensuring AI is audit-ready and actionable.
-                </p>
-            </section>
+    		<p class="lead-summary">
+        I’ve always been torn between the elegant certainty of mathematics and the beautiful complexity of biology, so I decided to master both. My obsession with healthcare data science began at IIT Delhi, where I spent my Master’s thesis translating the abstract constructs of evolution into mathematical models. That research spark eventually took me to Harvard University, building computational drug discovery frameworks for DARPA-funded projects, followed by a summer at Vertex Pharmaceuticals while finishing Data Science Degree at Columbia University. Today, I’m a Senior Data Scientist on the Experimental AI team at AbbVie, where I translate complex statistical theory and AI to build enterprise-ready solutions. Whether it’s decoding disease at the discovery stage or building audit-ready AI solutions, I live for the moments where rigorous algorithms meet clinical innovation.
+    	</p>
+	</section>
 	  
            <section id="lifecycle-section">
-    <p class="lead-summary">
-        Leveraging my background in Mathematics and Data Science, I have experience <strong>building AI solutions across different stages within a drug's lifecycle</strong>, specifically focusing on the computational, operational, and regulatory milestones. [cite: 9]
-    </p>
 
     <div id="experience-tooltip" class="tooltip-hidden"></div>
 
