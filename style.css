@@ -158,11 +158,51 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 }
 
 /* Lifecycle */
+
 /* Reduce space above the lifecycle graphic */
 #lifecycle-section {
     margin-top: -20px;   /* Pulls the graphic closer to the text above */
     margin-bottom: 20px; /* Keeps the gap small below it as well */
 }
+
+/* New Header Styling */
+.lifecycle-header {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 8px;
+}
+
+/* Process Arrow Styling */
+.process-arrow {
+    font-size: 32px;
+    fill: var(--text);
+    text-anchor: middle;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+/* Increase Step Title Size */
+.big-text {
+    font-size: 16px !important; /* Larger text inside circles */
+    font-weight: 800 !important;
+}
+
+/* Add Strong Outlines to Circles */
+.circle-bg {
+    stroke-width: 4px !important; /* Thicker outline */
+    stroke: var(--text);          /* Outline color matches theme text */
+    transition: all 0.3s ease;
+}
+
+/* Specific Outlines to stay visible even on colored backgrounds */
+.discovery { stroke: #9370DB; } /* Slightly darker purple for outline */
+.phase3-4 { stroke: #A0522D; }  /* Slightly darker orange for outline */
+.regulatory { stroke: #B8860B; } /* Slightly darker gold for outline */
+.phase-locked { stroke: #999999; }
 
 .lifecycle-container {
     position: relative;
@@ -299,3 +339,26 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     filter: drop-shadow(0 0 15px currentColor);
     transform: translateY(-5px);
     stroke-width: 8;
+.project-image-container {
+    width: 100%;
+    height: 120px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.project-visual {
+    max-width: 80px; /* Adjust based on your image size */
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+/* Optional: Add a slight zoom effect when you hover over the card */
+.project-card:hover .project-visual {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

@@ -42,6 +42,7 @@
 	</section>
 	  
            <section id="lifecycle-section">
+    <h2 class="lifecycle-header">Experience across Drug Lifecycle</h2>
 
     <div id="experience-tooltip" class="tooltip-hidden"></div>
 
@@ -50,30 +51,36 @@
             <path d="M100 125 H800" stroke="#eee" stroke-width="8" stroke-linecap="round" />
 
             <g class="step-node" data-project="Developed disease-agnostic Computational Drug Discovery Framework">
-    		<circle cx="150" cy="125" r="80" class="circle-bg discovery" />
-    		<text x="150" y="110" class="step-title">Drug Discovery</text>
-    		<text x="150" y="130" class="step-title">& Development</text>
-    		<text x="150" y="170" class="step-icon">🔬</text>
-	    </g>
+                <circle cx="150" cy="125" r="80" class="circle-bg discovery" />
+                <text x="150" y="110" class="step-title big-text">Drug Discovery</text>
+                <text x="150" y="130" class="step-title big-text">& Development</text>
+                <text x="150" y="170" class="step-icon">🔬</text>
+            </g>
+
+            <text x="250" y="135" class="process-arrow">➔</text>
 
             <g class="step-node locked">
                 <circle cx="350" cy="125" r="80" class="circle-bg phase-locked" />
-                <text x="350" y="115" class="step-title gray-text">Phase 1 &</text>
-                <text x="350" y="135" class="step-title gray-text">Phase 2</text>
+                <text x="350" y="115" class="step-title big-text gray-text">Phase 1 &</text>
+                <text x="350" y="135" class="step-title big-text gray-text">Phase 2</text>
                 <text x="350" y="170" class="step-icon grayscale">🧪</text>
             </g>
 
+            <text x="450" y="135" class="process-arrow">➔</text>
+
             <g class="step-node" data-project="Built AI solutions for <br>• Clinical Trial Operations<br>• Risk Based Quality Management<br>• Medical Monitoring">
                 <circle cx="550" cy="125" r="80" class="circle-bg phase3-4" />
-                <text x="550" y="115" class="step-title">Phase 3 &</text>
-                <text x="550" y="135" class="step-title">Phase 4</text>
+                <text x="550" y="115" class="step-title big-text">Phase 3 &</text>
+                <text x="550" y="135" class="step-title big-text">Phase 4</text>
                 <text x="550" y="170" class="step-icon">📊</text>
             </g>
 
+            <text x="650" y="135" class="process-arrow">➔</text>
+
             <g class="step-node" data-project="Prepared audit-ready documentation of solutions under GxP guidelines">
                 <circle cx="750" cy="125" r="80" class="circle-bg regulatory" />
-                <text x="750" y="110" class="step-title">Regulatory</text>
-                <text x="750" y="130" class="step-title">Submission</text>
+                <text x="750" y="110" class="step-title big-text">Regulatory</text>
+                <text x="750" y="130" class="step-title big-text">Submission</text>
                 <text x="750" y="170" class="step-icon">🛡️</text>
             </g>
         </svg>
@@ -87,14 +94,20 @@
                     <h3>AbbVie Inc.</h3>
                     <div class="project-grid">
                         <div class="project-card">
-                            <div class="thumbnail-box"><img src="assets/img/anomaly.jpg" alt="Anomaly Detection"></div>
+				<div class="project-image-container">
+        <img src="assets/img/anomaly-detection.png" alt="" class="project-visual">
+    </div>
+                            <div class="thumbnail-box"><img src="assets/img/anomaly-detection.jpg" alt="Anomaly Detection"></div>
                             <div class="card-content">
                                 <h4>Anomaly Detection</h4>
                                 <p>Built GLMM-based unsupervised models to identify atypical site behavior, flagging high-risk sites across global trials.</p>
                             </div>
                         </div>
                         <div class="project-card">
-                            <div class="thumbnail-box"><img src="assets/img/medical.jpg" alt="Medical Monitoring"></div>
+				<div class="project-image-container">
+        <img src="assets/img/medical-monitoring.png" alt="" class="project-visual">
+    </div>
+                            <div class="thumbnail-box"><img src="assets/img/medical-monitoring.jpg" alt=""></div>
                             <div class="card-content">
                                 <h4>Medical Monitoring</h4>
                                 <p>Led Isolation Forest patient monitoring, reducing review time by 90% via SHAP-based interpretability workflows.</p>
