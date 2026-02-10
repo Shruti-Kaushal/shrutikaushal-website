@@ -104,8 +104,12 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
 /* RESEARCH LIST */
 .writing-list { border-top: 1px solid var(--accent); }
 .writing-item {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 24px 0; border-bottom: 1px solid var(--accent); text-decoration: none;
+    display: flex; 
+    justify-content: flex-start; /* CHANGE THIS from space-between */
+    align-items: center;
+    padding: 24px 0; 
+    border-bottom: 1px solid var(--accent); 
+    text-decoration: none;
     transition: padding-left 0.2s ease;
 }
 .writing-item:hover { padding-left: 8px; }
@@ -374,4 +378,32 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     font-weight: 400 !important; /* Removes the bold effect */
     text-transform: none;      /* Ensures it is not all caps */
     letter-spacing: normal;
+}
+/* Container for the thumbnail */
+.writing-thumb {
+    width: 80px;            /* Fixed width for consistency */
+    height: 60px;           /* Landscape aspect ratio */
+    flex-shrink: 0;         /* Prevents image from squishing */
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--accent); /* Placeholder color while loading */
+    border: 1px solid var(--border);
+}
+
+.writing-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Crops image to fill the 80x60 box */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the whole row */
+.writing-item:hover .writing-thumb img {
+    transform: scale(1.1);  /* Subtle zoom on the image */
+}
+
+.writing-info {
+    padding-left: 0 !important;   /* Removes any accidental padding */
+    display: flex;
+    flex-direction: column;
 }

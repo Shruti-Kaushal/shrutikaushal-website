@@ -121,26 +121,39 @@
                 </div>
             </section>
 
-            <section id="research">
-                <h2>Research & Writing</h2>
-                <div class="writing-list">
-                    <a href="https://www.nature.com/articles/s43856-025-00975-8" class="writing-item" target="_blank">
-                        <div class="writing-info">
-                            <span class="writing-title">AI-enabled drug prediction reveal therapeutic use of vorinostat for Rett Syndrome</span>
-                            <span class="writing-meta">Communications Medicine, Nature · 2025</span>
-                        </div>
-                        <span class="writing-arrow">→</span>
-                    </a>
+<section id="research">
+    <h2>Research & Writing</h2>
+    <div class="writing-list">
+        
+        <a href="https://www.nature.com/articles/s43856-025-00975-8" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 30px;">
+            <div class="writing-thumb" style="width: 100px; height: 130px; flex-shrink: 0; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #f5f5f5;">
+                <img src="assets/img/nature-page-1.png" alt="Nature Paper Page 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            </div><div class="writing-info" style="display: flex; flex-direction: column; margin-left: 20px; padding: 0;">
+                <span class="writing-title" style="display: block; font-size: 0.95rem; font-weight: 600; color: var(--text); line-height: 1.2; margin: 0;">AI-enabled drug prediction reveal therapeutic use of vorinostat for Rett Syndrome</span>
+                <span class="writing-meta" style="display: block; color: var(--secondary); font-size: 0.85rem; margin-top: 4px;">Communications Medicine, Nature · 2025</span>
+            </div>
+        </a>
 
-                    <a href="https://doi.org/10.1371/journal.pcbi.1011050" class="writing-item" target="_blank">
-                        <div class="writing-info">
-                            <span class="writing-title">Target-agnostic drug prediction uncovers associations of statins with COVID-19 survival</span>
-                            <span class="writing-meta">PLOS Computational Biology · 2023</span>
-                        </div>
-                        <span class="writing-arrow">→</span>
-                    </a>
-                </div>
-            </section>
+        <a href="https://doi.org/10.1371/journal.pcbi.1011050" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 30px;">
+            <div class="writing-thumb" style="width: 100px; height: 130px; flex-shrink: 0; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #f5f5f5;">
+                <img src="assets/img/plos-page-1.png" alt="PLOS Paper Page 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            </div><div class="writing-info" style="display: flex; flex-direction: column; margin-left: 20px; padding: 0;">
+                <span class="writing-title" style="display: block; font-size: 0.95rem; font-weight: 600; color: var(--text); line-height: 1.2; margin: 0;">Target-agnostic drug prediction uncovers associations of statins with COVID-19 survival</span>
+                <span class="writing-meta" style="display: block; color: var(--secondary); font-size: 0.85rem; margin-top: 4px;">PLOS Computational Biology · 2023</span>
+            </div>
+        </a>
+
+        <a href="https://web.iitd.ac.in/~sumeet/Shruti_thesis.pdf" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 30px;">
+            <div class="writing-thumb" style="width: 100px; height: 130px; flex-shrink: 0; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #f5f5f5;">
+                <img src="assets/img/thesis-page-1.png" alt="Thesis Thumbnail" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            </div><div class="writing-info" style="display: flex; flex-direction: column; margin-left: 20px; padding: 0;">
+                <span class="writing-title" style="display: block; font-size: 0.95rem; font-weight: 600; color: var(--text); line-height: 1.2; margin: 0;">Mathematical Models of Evolvability</span>
+                <span class="writing-meta" style="display: block; color: var(--secondary); font-size: 0.85rem; margin-top: 4px;">Master's Thesis at Indian Institute of Technology Delhi · 2018</span>
+            </div>
+        </a>
+
+    </div>
+</section>
 
             <section id="awards">
                 <h2>Awards</h2>
