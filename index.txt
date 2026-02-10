@@ -114,7 +114,7 @@
 			<div class="thumbnail-box"><img src="assets/img/drug-discovery.jpg" alt=""></div>
                             <div class="card-content">
                                 <h4>AI Drug Discovery</h4>
-                                <p>Developed Markov Random Field frameworks for protein-target interactions, accelerating therapeutic discovery throughput.</p>
+                                <p>Developed Markov Random Field frameworks for gene regulatory networks to identify targets and drugs, accelerating therapeutic discovery throughput.</p>
                             </div>
                         </div>
                     </div>
@@ -160,8 +160,8 @@
                 <div class="writing-list">
                     <div class="writing-item no-link">
                         <div class="writing-info">
-                            <span class="writing-title">AbbVie R&D President's Award</span>
-                            <span class="writing-meta">Recognized for development and delivery of enterprise anomaly detection · 2024</span>
+                            <span class="writing-title">AbbVie R&D President's Award · 2024</span>
+                            <span class="writing-info" style="color: var(--secondary); font-size: 0.85rem;">Recognized for development and accelerated delivery of an enterprise anomaly detection solution improving clinical trial oversight</span>
                         </div>
                     </div>
                 </div>
