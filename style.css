@@ -354,3 +354,24 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     filter: drop-shadow(0 0 15px currentColor);
     transform: translateY(-5px);
     stroke-width: 8;
+
+/* Header Layout */
+/* Container to handle the horizontal layout */
+.experience-header-row h3 {
+    display: flex;
+    justify-content: space-between; /* Pushes the company left and date right */
+    align-items: baseline;
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+    font-weight: 600; /* Only the company name stays bold */
+}
+
+/* Specific style for the date text */
+.experience-date-running {
+    font-size: 0.8rem;
+    color: var(--secondary); /* Makes the color lighter/gray  */
+    font-weight: 400 !important; /* Removes the bold effect */
+    text-transform: none;      /* Ensures it is not all caps */
+    letter-spacing: normal;
+}
