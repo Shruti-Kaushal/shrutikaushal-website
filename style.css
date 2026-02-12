@@ -407,3 +407,8 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr !important; /* Stack cards in 1 column on mobile */
+    }
+}
