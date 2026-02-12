@@ -76,11 +76,26 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     line-height: 1.6;        /* Maintains readability */
 }
 /* PROJECT GRID */
+/* Desktop View: 3 Columns */
 .project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* Tablet View: 2 Columns */
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile View: 1 Column (Fixes the "squished" look) */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-card {
@@ -406,9 +421,4 @@ h3 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
     padding-left: 0 !important;   /* Removes any accidental padding */
     display: flex;
     flex-direction: column;
-}
-@media (max-width: 768px) {
-    .project-grid {
-        grid-template-columns: 1fr !important; /* Stack cards in 1 column on mobile */
-    }
 }
