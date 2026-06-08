@@ -42,47 +42,52 @@
            <section id="lifecycle-section">
     <h2 class="lifecycle-header">Experience across Drug Lifecycle</h2>
 
-    <div id="experience-tooltip" class="tooltip-hidden"></div>
+    <div class="pipeline-wrapper">
+        <div class="pipeline-row">
 
-    <div class="lifecycle-container">
-        <svg viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg" class="lifecycle-svg">
-            <g class="step-node" data-project="Developed disease-agnostic Computational Drug Discovery Framework">
-                <circle cx="150" cy="125" r="80" class="circle-bg discovery" />
-                <text x="150" y="120" class="step-title big-text">Drug Discovery</text>
-                <text x="150" y="140" class="step-title big-text">& Development</text>
-            </g>
+            <a href="#wyss-experience" class="pipeline-stage stage-link">
+                <div class="stage-node discovery-node"></div>
+                <div class="stage-label">Drug Discovery<br>& Development</div>
+                <div class="stage-tags">
+                    <span class="stage-tag">Computational Drug Discovery</span>
+                    <span class="stage-tag">Gene Regulatory Networks</span>
+                </div>
+            </a>
 
-            <text x="250" y="135" class="process-arrow">➔</text>
+            <div class="pipeline-stage stage-locked">
+                <div class="stage-node locked-node"></div>
+                <div class="stage-label muted-label">Phase 1 &<br>Phase 2</div>
+            </div>
 
-            <g class="step-node locked">
-                <circle cx="350" cy="125" r="80" class="circle-bg phase-locked" />
-                <text x="350" y="125" class="step-title big-text gray-text">Phase 1 &</text>
-                <text x="350" y="145" class="step-title big-text gray-text">Phase 2</text>
-            </g>
+            <a href="#abbvie-experience" class="pipeline-stage stage-link">
+                <div class="stage-node phase34-node"></div>
+                <div class="stage-label">Phase 3 &<br>Phase 4</div>
+                <div class="stage-tags">
+                    <span class="stage-tag">Anomaly Detection</span>
+                    <span class="stage-tag">Medical Monitoring</span>
+                    <span class="stage-tag">Risk-Based QM</span>
+                    <span class="stage-tag">Clinical Trial Ops</span>
+                    <span class="stage-tag">Generative AI</span>
+                </div>
+            </a>
 
-            <text x="450" y="135" class="process-arrow">➔</text>
+            <div class="pipeline-stage">
+                <div class="stage-node regulatory-node"></div>
+                <div class="stage-label">Regulatory<br>Submission</div>
+                <div class="stage-tags">
+                    <span class="stage-tag">GxP Documentation</span>
+                    <span class="stage-tag">Audit-Ready AI</span>
+                </div>
+            </div>
 
-            <g class="step-node" data-project="Built AI solutions for <br>• Clinical Trial Operations<br>• Risk Based Quality Management<br>• Medical Monitoring">
-                <circle cx="550" cy="125" r="80" class="circle-bg phase3-4" />
-                <text x="550" y="125" class="step-title big-text">Phase 3 &</text>
-                <text x="550" y="145" class="step-title big-text">Phase 4</text>
-            </g>
-
-            <text x="650" y="135" class="process-arrow">➔</text>
-
-            <g class="step-node" data-project="Prepared audit-ready documentation of solutions under GxP guidelines">
-                <circle cx="750" cy="125" r="80" class="circle-bg regulatory" />
-                <text x="750" y="120" class="step-title big-text">Regulatory</text>
-                <text x="750" y="140" class="step-title big-text">Submission</text>
-            </g>
-        </svg>
+        </div>
     </div>
 </section>
 
             <section id="experience">
     <h2>Industry Experience</h2>
 
-    <div class="experience-item">
+    <div class="experience-item" id="abbvie-experience">
         <div class="experience-header-row">
             <h3>AbbVie Inc <span class="experience-date-running" style="color: #666; font-weight: 300; font-size: 0.9rem; margin-left: 10px;">(2023 - Present)</span></h3>
         </div>
@@ -94,6 +99,13 @@
                 <div class="card-content">
                     <h4>Site Anomaly & Fraud Detection</h4>
                     <p>Engineered GLMM-based unsupervised models to identify atypical site behavior and fraud. Deployed portfolio-wide across global trials to ensure high-fidelity data oversight.</p>
+                    <div class="stack-tags">
+                        <span class="stack-tag">Mixed Effects</span>
+                        <span class="stack-tag">Temporal Data</span>
+                        <span class="stack-tag">Hypothesis Testing</span>
+                        <span class="stack-tag">ePRO</span>
+                        <span class="stack-tag">Statistical Theory</span>
+                    </div>
                 </div>
             </div>
 
@@ -102,6 +114,12 @@
                 <div class="card-content">
                     <h4>Professional Patient Detection</h4>
                     <p>Developed novel algorithms to identify duplicate or "professional" trial participants, safeguarding data integrity across international clinical sites.</p>
+                    <div class="stack-tags">
+                        <span class="stack-tag">Patient Embeddings</span>
+                        <span class="stack-tag">Vector Similarity</span>
+                        <span class="stack-tag">Statistical Testing</span>
+                        <span class="stack-tag">EHR</span>
+                    </div>
                 </div>
             </div>
 
@@ -110,21 +128,19 @@
                 <div class="card-content">
                     <h4>Medical Monitoring</h4>
                     <p>Engineered ensemble models for unsupervised patient monitoring, reducing clinical review and medical escalation times by 90%.</p>
+                    <div class="stack-tags">
+                        <span class="stack-tag">Anomaly Detection</span>
+                        <span class="stack-tag">Isolation Forests</span>
+                        <span class="stack-tag">SHAP</span>
+                        <span class="stack-tag">EHR</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="thumbnail-box"><img src="assets/img/rbqm.png" alt="Risk-Based Quality Management"></div>
-                <div class="card-content">
-                    <h4>Risk-Based Quality Management of Clinical Trials</h4>
-                    <p>Implemented enterprise-level RBQM frameworks to optimize monitoring resources. Focused oversight on critical-to-quality data points to maximize trial efficiency.</p>
-                </div>
             </div>
-
-            </div> 
     </div>
 
-    <div class="experience-item" style="margin-top: 40px;">
+    <div class="experience-item" id="wyss-experience" style="margin-top: 40px;">
         <div class="experience-header-row">
             <h3>Wyss Institute, Harvard University <span class="experience-date-running" style="color: #666; font-weight: 300; font-size: 0.9rem; margin-left: 10px;">(2019 - 2022)</span></h3>
         </div>
@@ -133,7 +149,13 @@
                 <div class="thumbnail-box"><img src="assets/img/drug-discovery.jpg" alt="AI Drug Discovery"></div>
                 <div class="card-content">
                     <h4>AI Drug Discovery</h4>
-                    <p>Developed Markov Random Field frameworks for gene regulatory networks to identify targets and drugs, accelerating therapeutic discovery throughput.</p>
+                    <p>Built AI-driven drug discovery framework using Markov Random Fields and multiomics data to model protein–target interactions for DARPA-funded therapeutic projects.</p>
+                    <div class="stack-tags">
+                        <span class="stack-tag">Network Theory</span>
+                        <span class="stack-tag">Multiomics Data</span>
+                        <span class="stack-tag">Gene Expression</span>
+                        <span class="stack-tag">Belief Propagation</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,11 +163,95 @@
 </section>
 
 
+<section id="portfolio">
+    <h2>Portfolio Projects</h2>
+    <p class="section-subtitle">Something fun I've been working on</p>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <div class="thumbnail-box"><img src="assets/img/kdrama-poster-2.jpg" alt="KDrama Sense"></div>
+            <div class="card-content">
+                <h4>KDrama Sense</h4>
+                <p>Agentic taste and theme-aware K-Drama assistant built by combining a custom enrichment pipeline and a RAG-based personalised assessment engine. Extracted and synthesised structured metadata, specialist reviews, and community discussions from TMDB, MyDramaList, and Reddit r/KDRAMA into 1,500 enriched drama profiles with LLM-derived thematic labels.</p>
+                <div class="stack-tags">
+                    <span class="stack-tag">Generative AI</span>
+                    <span class="stack-tag">LangChain</span>
+                    <span class="stack-tag">LangGraph</span>
+                    <span class="stack-tag">BERT</span>
+                    <span class="stack-tag">Topic Modeling</span>
+                    <span class="stack-tag">ChromaDB</span>
+                    <span class="stack-tag">RAGAS</span>
+                    <span class="stack-tag">TMDB API</span>
+                    <span class="stack-tag">Streamlit</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="thumbnail-box"><img src="assets/img/adverse-events.jpg" alt="Trial Guard" style="object-fit: contain;"></div>
+            <div class="card-content">
+                <h4>Trial Guard</h4>
+                <p>Real-time adverse event prediction system for enrolled clinical trial patients using a temporal transformer trained on 13,000+ ALS patient trajectories from the PRO-ACT database. Implements timestamp-based positional encoding and an agentic pipeline integrating SHAP-based feature attribution and CTCAE v5.0 grading criteria to generate grounded clinical alerts at each patient visit.</p>
+                <div class="stack-tags">
+                    <span class="stack-tag">Agentic AI</span>
+                    <span class="stack-tag">Transformers</span>
+                    <span class="stack-tag">PyTorch</span>
+                    <span class="stack-tag">LangGraph</span>
+                    <span class="stack-tag">SHAP</span>
+                    <span class="stack-tag">CTCAE v5.0</span>
+                    <span class="stack-tag">Streamlit</span>
+                    <span class="stack-tag">PRO-ACT</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="awards">
+                <h2>Awards</h2>
+                <div class="writing-list">
+                    <a href="https://pistoiaalliance.org/data-science-talent-awards/" class="writing-item" target="_blank">
+                        <div class="writing-info">
+                            <span class="writing-title">Young Data Scientist of The Year · 2026 · Pistoia Alliance</span>
+                            <span class="writing-info" style="color: var(--secondary); font-size: 0.85rem;">Recognized for driving AI innovation and impact in life sciences R&D through Advanced Anomaly Detection in Clinical Trials</span>
+                        </div>
+                    </a>
+                    <div class="writing-item no-link">
+                        <div class="writing-info">
+                            <span class="writing-title">AbbVie R&D President's Award · 2024</span>
+                            <span class="writing-info" style="color: var(--secondary); font-size: 0.85rem;">Recognized for development and accelerated delivery of an enterprise anomaly detection solution improving clinical trial oversight</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="features">
+    <h2>Features</h2>
+    <div class="writing-list">
+
+        <a href="https://www.linkedin.com/feed/update/urn:li:share:7449509812519940096/" class="writing-item" target="_blank">
+            <div class="writing-info">
+                <span class="writing-title">Pistoia Alliance Announces Young Data Scientist of the Year Winner for 2026</span>
+                <span class="writing-meta">Pistoia Alliance · 2026</span>
+            </div>
+        </a>
+
+        <a href="https://www.aidatapress.com/news/anomaly-detection-clinical-trials-shruti-kaushal-abbvie" class="writing-item" target="_blank">
+            <div class="writing-info">
+                <span class="writing-title">Pharma AI Catches Duplicate Patients and Site-Level Fraud Before Clinical Trials Are Compromised</span>
+                <span class="writing-meta">AI Data Press · Enterprise DB · 2026</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
 <section id="research">
     <h2>Research & Writing</h2>
     <div class="writing-list">
         
-        <a href="https://www.nature.com/articles/s43856-025-00975-8" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 30px;">
+        <a href="https://www.nature.com/articles/s43856-025-00975-8" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 12px;">
             <div class="writing-thumb" style="width: 100px; height: 130px; flex-shrink: 0; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #f5f5f5;">
                 <img src="assets/img/nature-page-1.png" alt="Nature Paper Page 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
             </div><div class="writing-info" style="display: flex; flex-direction: column; margin-left: 20px; padding: 0;">
@@ -154,7 +260,7 @@
             </div>
         </a>
 
-        <a href="https://doi.org/10.1371/journal.pcbi.1011050" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 30px;">
+        <a href="https://doi.org/10.1371/journal.pcbi.1011050" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 12px;">
             <div class="writing-thumb" style="width: 100px; height: 130px; flex-shrink: 0; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #f5f5f5;">
                 <img src="assets/img/plos-page-1.png" alt="PLOS Paper Page 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
             </div><div class="writing-info" style="display: flex; flex-direction: column; margin-left: 20px; padding: 0;">
@@ -163,7 +269,7 @@
             </div>
         </a>
 
-        <a href="https://web.iitd.ac.in/~sumeet/Shruti_thesis.pdf" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 30px;">
+        <a href="https://web.iitd.ac.in/~sumeet/Shruti_thesis.pdf" class="writing-item" target="_blank" style="display: flex; align-items: flex-start; text-decoration: none; margin-bottom: 12px;">
             <div class="writing-thumb" style="width: 100px; height: 130px; flex-shrink: 0; border: 1px solid #ddd; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); overflow: hidden; background: #f5f5f5;">
                 <img src="assets/img/thesis-page-1.png" alt="Thesis Thumbnail" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
             </div><div class="writing-info" style="display: flex; flex-direction: column; margin-left: 20px; padding: 0;">
@@ -174,18 +280,6 @@
 
     </div>
 </section>
-
-            <section id="awards">
-                <h2>Awards</h2>
-                <div class="writing-list">
-                    <div class="writing-item no-link">
-                        <div class="writing-info">
-                            <span class="writing-title">AbbVie R&D President's Award · 2024</span>
-                            <span class="writing-info" style="color: var(--secondary); font-size: 0.85rem;">Recognized for development and accelerated delivery of an enterprise anomaly detection solution improving clinical trial oversight</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
         </main>
     </div>
